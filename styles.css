@@ -1,14 +1,13 @@
 body {
-    background-color:#191919;
+    background-image: url("http://fc02.deviantart.net/fs70/i/2013/210/c/0/star_field_background_by_orionshipworks-d6fofn8.jpg");
+}
 p {
-	color:#FFFFFF
-;
+	color:#FFFFFF;
+	font-size:77px;
 }
 h1 {
-	color:#FFFFFF
-;
+	color:#FFFFFF;
 }
 h2 {
-	color:#FFFFFF
-;
+	color:#FFFFFF;
 }
