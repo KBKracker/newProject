@@ -1,37 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+var computerChoice = "";
+var userChoice = "";
+function computerThink(){
+	computerChoice = Math.floor(Math.random()*3);
+	if
+		(computerchoice === 1){
+			computerChoice = "Rock";
 
-<script type="text/javascript">
-	var test = function(){
-		alert("You pick Scissor");
-	};
-type="text/javascript";
-var test2 = function(){
-	alert("You pick Paper");
-	};	
-type="text/javascript";
-var test3 = function(){
-		alert("You pick Rock");
-	};
-</script>
-</head>
-<center>
-	<body>
-		<br>
-		<br> 
-		<br>
-		<br>
-		<br>
-		<p>Lets Play a Game!</p>
-		<br>
-		<button type="button" onclick="test3()">Rock</button>
-		<button type="button" onclick="test2()">Paper</button>
-		<button type="button" onclick="test()">Scissor</button>
-		<link rel="stylesheet" type="text/css" href="styles.css">
-		<script src="app.js"></script>
-	</body>
-</center>
-</html>
+	}   
+	else if
+		(computerChoice === 2){
+			computerChoice = "paper"; 
+	}        
+	else{
+		computerChoice = "scissors";
+	}
+	
+}
+
+function rockPick(){
+	userChoice = "Rock";
+	computerThink();
+	results();
+}
+
+function paperPick(){
+	userChoice = "Paper";
+	computerThink();
+	results();
+}
+
+function scissorsPick(){
+	userChoice = "scissors";
+	computerThink();
+	results();
+}
+
+var comapre = function(choice1, choice2) {
+	if(choice1 === choice2) {
+		return "The result is a tie";
+
+}
+
+else if(choice1 === "Rock") {
+	if(choice2 === "Scissors") {
+		return "Rock wins";
+	else {
+		return "Paper wins";
+}
+
+else if(choice1 === "Paper") {
+	if(choice2 === "Rock") {
+
+	else {
+		return "Paper wins";
+
+}
