@@ -5,14 +5,16 @@ function computerThink(){
 	if
 		(computerchoice === 1){
 			computerChoice = "Rock";
-
+			window.alert("computer picked rock");
 	}   
 	else if
 		(computerChoice === 2){
-			computerChoice = "paper"; 
+			computerChoice = "paper";
+			window.alert("computer picked paper"); 
 	}        
 	else{
 		computerChoice = "scissors";
+		window.alert("computer picked scissors");
 	}
 	
 }
